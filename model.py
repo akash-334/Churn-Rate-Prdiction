@@ -9,8 +9,8 @@ import pandas as pd
 
 df=pd.read_excel(r"C:\Users\91898\Downloads\customer_churn_large_dataset (1).xlsx")
 df.head()
-
-
+df.duplicated().sum()
+df=df.drop_duplicates()
 # In[4]:
 
 
